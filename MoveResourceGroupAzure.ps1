@@ -7,6 +7,7 @@ Login-AzureRmAccount
     $TempCSV = "$($workingpath)\temp.csv"
     $logCSVpath = "$($workingpath)\log.csv"
     $subtempcsv ="$($workingpath)\subscriptions.csv"
+    $TempCSVExists = Test-path "$($workingpath)\temp.csv"
     
     If ($TempCSVExists -eq $true)
 	{
