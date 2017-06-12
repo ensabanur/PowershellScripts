@@ -5,13 +5,13 @@
 ###################################################
 
 #Variables
-$VMname = "MHAZFGTFWTEST"
-$VMRG =  "MHAZFGTFWTESTRG"
-$NICName = "MHAZFGTFWTESTNic2"
-$NICRG = "MHAZFGTFWTESTRG"
-$VNetName = "MHAZEXPVNET01"
-$subnetname = "MHAZEXPSUB01"
-$VnetRG = "MHAZSYDGENRG"
+$VMname = "MyVM"
+$VMRG =  "VMResourceGroup"
+$NICName = "NewNic"
+$NICRG = "NICResourceGroup"
+$VNetName = "VnetName"
+$subnetname = "SubnetName"
+$VnetRG = "VnetResourceGroup"
 $Location = "Australia East"
 
 #Get the subnet ID	
