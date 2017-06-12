@@ -1,6 +1,6 @@
-﻿$VaultResourceGroup = "MHAZMELGENRG"
-$VaultName = "MHAZMELBKP01"
-$VMResourceGroup = "MHAZMELPROXYRG"
+﻿$VaultResourceGroup = "VaultRG"
+$VaultName = "BaultName"
+$VMResourceGroup = "VMResourceGroup"
 
 New-AzureRmRecoveryServicesVault -Name "$VaultName" -ResourceGroupName "$VaultResourceGroup" -Location "Australia Southeast"
 $vault1 = Get-AzureRmRecoveryServicesVault –Name "$VaultName"
