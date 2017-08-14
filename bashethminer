@@ -1,16 +1,7 @@
 #!/bin/sh
-
 git clone https://github.com/Genoil/cpp-ethereum.git
-
 cd cpp-ethereum
-
 mkdir build; cd build
-
 cmake ..
-
 cmake --build .
-
 sudo make install
-
-
-ethminer -G -S asia1.ethermine.org:4444 -FS eu1.ethermine.org:4444 -O 0x116BFD769581B4A6fc9d6142bE5881b24CBCAaF8.linuxnode5
