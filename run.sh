@@ -1,10 +1,10 @@
 #!/bin/bash
 sudo apt-get update
 sudo apt-get -qq dist-upgrade
-sudo apt-get -qq install gcc g++ build-essential libssl-dev automake linux-headers-$(uname -r) git gawk libcurl4-openssl-dev libjansson-dev xorg libc++-dev libgmp-dev python-dev
-wget http://uk.download.nvidia.com/XFree86/Linux-x86_64/375.20/NVIDIA-Linux-x86_64-375.20.run
-sudo chmod +x NVIDIA-Linux-x86_64-375.20.run
-sudo ./NVIDIA-Linux-x86_64-375.20.run --no-install-compat32-libs -a -n -q -s
+sudo apt-get -qq install gcc g++ build-essential libssl-dev automake linux-headers-generic git gawk libcurl4-openssl-dev libjansson-dev xorg libc++-dev libgmp-dev python-dev dkms
+wget http://us.download.nvidia.com/XFree86/Linux-x86_64/384.66/NVIDIA-Linux-x86_64-384.66.run
+sudo chmod +x NVIDIA-Linux-x86_64-384.66.run
+sudo ./NVIDIA-Linux-x86_64-384.66.run --no-install-compat32-libs --no-x-check -a -n -q -s
 wget https://developer.nvidia.com/compute/cuda/8.0/prod/local_installers/cuda-repo-ubuntu1604-8-0-local_8.0.44-1_amd64-deb
 sudo dpkg -i cuda-repo-ubuntu1604-8-0-local_8.0.44-1_amd64-deb
 sudo apt-get update
