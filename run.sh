@@ -19,6 +19,6 @@ mkdir ~/ethminer; cd ~/ethminer
 git clone https://github.com/ethereum-mining/ethminer
 cd ethminer
 mkdir build; cd build
-cmake .. -DETHASHCUDA=ON -DETHASHCL=OFF
+cmake .. -DETHASHCUDA=ON -DETHASHCL=ON
 cmake --build .
 sudo make install
