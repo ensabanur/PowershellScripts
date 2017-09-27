@@ -15,5 +15,10 @@ echo "export PATH=/usr/local/cuda-8.0/bin:$PATH" >> ~/.bashrc
 echo "export LD_LIBRARY_PATH=/usr/local/cuda8.0/lib64:$LD_LIBRARY_PATH" >> ~/.bashrc
 sudo apt-get -qq update
 sudo apt-get -qq install cmake
-wget https://github.com/ethereum-mining/ethminer/releases/download/v0.12.0/ethminer-0.12.0-Linux.tar.gz
-sudo tar -xzvf ethminer-0.12.0-Linux.tar.gz
+mkdir ~/ethminer; cd ~/ethminer
+git clone https://github.com/ethereum-mining/ethminer
+cd ethminer
+mkdir build; cd build
+cmake .. -DETHASHCUDA=ON -DETHASHCL=OFF
+cmake --build .
+sudo make install
